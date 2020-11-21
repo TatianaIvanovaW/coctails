@@ -30,7 +30,10 @@ export default function CoctailPage() {
       <div>
         <h1>Sorry! Something went wrong!</h1>
         <h2>We are working hard on fixing it!!!</h2>
-        <img src="https://img.devrant.com/devrant/rant/r_113663_eTws2.jpg"></img>
+        <img
+          src="https://img.devrant.com/devrant/rant/r_113663_eTws2.jpg"
+          alt="error"
+        ></img>
       </div>
     );
   }
