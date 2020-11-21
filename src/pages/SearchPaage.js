@@ -46,50 +46,46 @@ export default function SearchPaage() {
 
   return (
     <div>
-      <Navbar.Brand>Discover some coctails!</Navbar.Brand>
-      <Form inline>
-        <FormControl
-          ref={(input) => input && input.focus()}
-          value={text}
-          onChange={(e) => {
-            set_text(e.target.value);
-          }}
-          type="text"
-          placeholder="Search"
-          className="mr-sm-2"
-        />
-        <Button onClick={onClickHandler} variant="outline-info">
-          Search
-        </Button>
-      </Form>
-
-      {/* <p>
-        <input
-          ref={(input) => input && input.focus()}
-          value={text}
-          onChange={(e) => {
-            set_text(e.target.value);
-          }}
-        ></input>
-      </p>
-      <button onClick={onClickHandler}>Search</button> */}
-
-      {result ? (
-        result.map((drink) => {
-          return (
-            <div key={drink.idDrink}>
-              <Coctail
-                id={drink.idDrink}
-                ad={drink.strCategory}
-                name={drink.strDrink}
-                img={drink.strDrinkThumb}
-              />
-            </div>
-          );
-        })
-      ) : (
-        <p> Not Found! Try again!</p>
-      )}
+      <div>
+        <Navbar.Brand>
+          <h3>Discover some coctails</h3>
+        </Navbar.Brand>
+        <Form inline>
+          <FormControl
+            ref={(input) => input && input.focus()}
+            value={text}
+            onChange={(e) => {
+              set_text(e.target.value);
+            }}
+            type="text"
+            placeholder="Search"
+            className="mr-sm-2"
+          />
+          <Button onClick={onClickHandler} variant="outline-info">
+            Search
+          </Button>
+        </Form>
+      </div>
+      <div className="result">
+        {result ? (
+          result.map((drink) => {
+            return (
+              <div className="coct" key={drink.idDrink}>
+                <Coctail
+                  id={drink.idDrink}
+                  ad={drink.strCategory}
+                  name={drink.strDrink}
+                  img={drink.strDrinkThumb}
+                />
+              </div>
+            );
+          })
+        ) : (
+          <div className="notfound">
+            <p> Not Found! Try again!</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

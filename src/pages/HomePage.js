@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import CoctailsCategory from "../components/CoctailsCategory";
+import "./Homepage.css";
 
 export default function HomePage() {
   const [categ, set_categ] = useState([]);
@@ -18,14 +19,14 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div>
-      <h3>Available types of coctails:</h3>
+    <div className="center">
+      <h3 className="title">Coctail categories</h3>
       {categ.map((category) => {
         const categoryNoSpace = category.strCategory.replace(/ /g, "_");
         const encodedCategory = encodeURIComponent(categoryNoSpace);
         console.log(encodedCategory);
         return (
-          <div key={category.strCategory}>
+          <div className="list" key={category.strCategory}>
             <CoctailsCategory
               id={encodedCategory}
               category={category.strCategory}

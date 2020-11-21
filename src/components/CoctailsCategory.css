@@ -1,6 +1,9 @@
-.list {
+.list1 {
   margin-bottom: 10px;
-  font-size: 30px;
-  color: purple;
-  font-style: oblique;
+
+  color: darkgrey;
+}
+
+.list1:hover {
+  color: darkgreen;
 }

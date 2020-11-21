@@ -1,0 +1,16 @@
+.title {
+  font-family: "Major Mono Display", monospace;
+  margin-bottom: 50px;
+  font-size: 28px;
+}
+
+.list {
+  font-family: "Handlee", cursive;
+  font-size: 28px;
+  margin: 20px;
+}
+
+.center {
+  justify-content: center;
+  text-align: center;
+}

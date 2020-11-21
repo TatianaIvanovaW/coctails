@@ -26,7 +26,7 @@ export default function CoctailsList() {
     <div className="flex">
       {list.map((coctail) => {
         return (
-          <div key={coctail.idDrink}>
+          <div className="suck" key={coctail.idDrink}>
             <Coctail
               ad={route_parameters.list}
               id={coctail.idDrink}

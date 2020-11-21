@@ -4,8 +4,15 @@ import { Link } from "react-router-dom";
 
 export default function CoctailsCategory(props) {
   return (
-    <Link to={`home/${props.id}`}>
-      <div className="list">{props.category}</div>
+    <Link
+      activeStyle={{
+        fontWeight: "bold",
+        color: "darkgreen",
+      }}
+      className="list1"
+      to={`home/${props.id}`}
+    >
+      <div>{props.category}</div>
     </Link>
   );
 }

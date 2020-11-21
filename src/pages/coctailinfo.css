@@ -1,0 +1,24 @@
+.mainC {
+  display: flex;
+  flex-flow: row;
+}
+
+.row {
+  display: flex;
+  flex-flow: column;
+  margin-left: 20px;
+  margin-top: 0;
+}
+
+.para {
+  text-align: left;
+}
+
+.hm {
+  text-align: left;
+}
+
+.nameTit {
+  font-family: "Major Mono Display", monospace;
+  margin-bottom: 20px;
+}

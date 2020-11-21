@@ -1,5 +1,9 @@
 .flex {
+  margin-top: 30px;
   display: flex;
-  flex-wrap: wrap;
-  flex-flow: row;
+  flex-flow: row wrap;
+}
+
+.suck {
+  width: 30%;
 }

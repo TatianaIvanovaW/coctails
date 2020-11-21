@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import CoctailInfo from "./CoctailInfo";
+import "./coctailpage.css";
 
 export default function CoctailPage() {
   const route_parameters = useParams();
@@ -23,7 +24,7 @@ export default function CoctailPage() {
   }, [route_parameters.coctail]);
 
   return (
-    <div>
+    <div className="mainCC">
       {item.map((coctail) => {
         return (
           <div key={coctail.idDrink}>
