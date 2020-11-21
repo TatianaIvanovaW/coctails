@@ -23,6 +23,18 @@ export default function CoctailPage() {
     getData();
   }, [route_parameters.coctail]);
 
+  console.log(item);
+
+  if (!item) {
+    return (
+      <div>
+        <h1>Sorry! Something went wrong!</h1>
+        <h2>We are working hard on fixing it!!!</h2>
+        <img src="https://img.devrant.com/devrant/rant/r_113663_eTws2.jpg"></img>
+      </div>
+    );
+  }
+
   return (
     <div className="mainCC">
       {item.map((coctail) => {
