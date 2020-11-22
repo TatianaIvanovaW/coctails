@@ -12,10 +12,13 @@ function App() {
       <Header />
 
       <Switch>
-        <Route path="/home/:list/:coctail" component={CoctailPage} />
-        <Route path="/home/:list" component={CoctailsList} />
+        {/* <Route path="/home/:list/:categoty/:coctail" component={CoctailPage} /> */}
+
         <Route path="/search/:params" component={SearchPage} />
         <Route path="/search" component={SearchPage} />
+        {/* <Route path="/search/:params/:coctail" component={CoctailPage} /> */}
+        <Route path="/home/:list/:coctail" component={CoctailPage} />
+        <Route path="/home/:list" component={CoctailsList} />
         <Route exact path="/home" component={HomePage} />
       </Switch>
     </div>

@@ -11,6 +11,7 @@ export default function SearchPaage() {
   const [result, set_result] = useState([]);
   const history = useHistory();
   const { params } = useParams();
+  // const { coctail } = useParams();
 
   //   console.log(`history ${history}`);
 
