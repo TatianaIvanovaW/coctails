@@ -15,7 +15,7 @@ export default function CoctailsList() {
       const response = await axios.get(
         `https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${route_parameters.list}`
       );
-
+      console.log(response.data);
       set_list(response.data.drinks);
       console.log(response.data.drinks);
     };

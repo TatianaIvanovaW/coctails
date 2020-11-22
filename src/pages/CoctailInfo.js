@@ -6,7 +6,7 @@ export default function CoctailInfo(props) {
   return (
     <div>
       <h1 className="nameTit">{props.name}</h1>
-      <div class="mainC">
+      <div className="mainC">
         <img src={props.img} alt="coctail"></img>
         <div className="row">
           <h3 className="hm">
