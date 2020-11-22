@@ -11,7 +11,6 @@ export default function CoctailInfo(props) {
 
         {props.make ? (
           <div className="row">
-            {" "}
             <h3 className="hm">
               <Badge variant="secondary">how to make:</Badge>
             </h3>{" "}
